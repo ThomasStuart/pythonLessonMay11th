@@ -19,24 +19,25 @@ def adjacentElementsProduct(inputArray):
     # [45, 50, 20, 48, -24, 48]
 
 
-    max = history[0]  # 45 
-    
+    max = history[0]  # 45
+
     for i in range(0,len(history)):
         LHS = i
         RHS = i + 1
-        
-        #      45       >      50      tell me 50 is bigger. max is currently 45.  
-        #                              max = 50
-        #   
-            # 45        >    50 
+
+            # 45        >    50
         if history[LHS] > history[RHS]:
-                # 45       > 45 
+                # 45       > 45
             if history[LHS] > max:
-                # max = 50 ??
-                max   = history[LHS]
+                max   = history[LHS]  
+            # DOES NOT NEED AN ELSE
         else:
-            print("RHS")
+             # TODO:: MORE CODE GOES HERE 
+             pass  # delete this line
 
+    # TODO:: DO SOMETHING HERE
 
+# question1: why fo we not need an else clause for the inner if statement
+# question2: how could i do this this with 1 for-loop and no history array  #hard
 
 adjacentElementsProduct( [9, 5, 10, 2, 24, -1, -48] )
