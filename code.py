@@ -33,7 +33,7 @@ def adjacentElementsProduct(inputArray):
                 # 45       > 45 
             if history[LHS] > max:
                 # max = 50 ??
-                max   = history[RHS]
+                max   = history[LHS]
         else:
             print("RHS")
 
